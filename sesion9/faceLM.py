@@ -71,7 +71,7 @@ while True:
 			cv2.circle(frame, (x, y), 1, (0, 0, 255), -1)
 
 		box = face_utils.rect_to_bb(rect)
-		cv2.rectangle(frame,(box[0],box[1]),(box[0] + box[2],box[1] + box[3]),(0,255,0),3)
+		cv2.rectangle(frame,(box[0],box[1]),(box[0] + box[2],box[1] + box[3]),(0,255,0),1)
 		# right eye, respectively
 		upLip = shape[63,1]
 		downLip = shape[67,1]
